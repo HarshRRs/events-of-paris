@@ -49,3 +49,10 @@
 @media(max-width:390px){.embla .event-card{display:block;flex-basis:86%;min-height:0}.embla .event-card-image{height:185px}.embla .event-card-content{min-height:190px;padding:18px}.embla .event-card p{font-size:14px}.embla .event-card .coming{min-height:44px}}
 @media(prefers-reduced-motion:reduce){.brand-medallion canvas{display:none}}
 
+/* Three.js is an optional atmospheric layer behind the real poster and controls. */
+.hero-webgl{position:absolute;inset:0;width:100%;height:100%;display:block;pointer-events:none;opacity:0;transition:opacity .7s ease}
+.hero-art.has-webgl .hero-webgl{opacity:1}
+.hero-art.has-webgl .art-orbit{opacity:0;animation:none}
+.hero-art .poster,.hero-art .art-sticker,.hero-art .brand-medallion,.hero-art .image-disclaimer{z-index:2}
+@media(prefers-reduced-motion:reduce){.hero-webgl{display:none;transition:none}}
+

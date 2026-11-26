@@ -55,4 +55,5 @@
 .hero-art.has-webgl .art-orbit{opacity:0;animation:none}
 .hero-art .poster,.hero-art .art-sticker,.hero-art .brand-medallion,.hero-art .image-disclaimer{z-index:2}
 @media(prefers-reduced-motion:reduce){.hero-webgl{display:none;transition:none}}
+.signup-consent a,.footer-bottom span a{text-decoration:underline;text-underline-offset:3px}
 

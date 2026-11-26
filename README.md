@@ -1,6 +1,6 @@
-# Desi Events homepage
+# Desi Events website
 
-Light themed, responsive homepage for Desi Events. The root `index.html` runs without a build step. Event listings, ticket availability, gallery images, policies, contact details, and email signup are explicitly marked as previews until the organiser provides real information.
+Light themed, responsive website for Desi Events. The root `index.html` runs without a build step. The site also includes an events index (`events/index.html`), next event preview (`events/next/index.html`), and current privacy information (`privacy/index.html`). Event listings, ticket availability, gallery images, policies, contact details, and email signup are explicitly marked as previews until the organiser provides real information.
 
 ## Run
 
@@ -10,14 +10,14 @@ Open `index.html` directly, or serve the project folder with any static HTTP ser
 node server.mjs
 ```
 
-The page uses `src/site.js` for its interactions. GSAP 3.15.0 handles the coordinated hero entrance; Motion 14.14.0 handles menu, FAQ, lightbox, and selected scroll feedback. Both are pinned CDN imports with native or static fallbacks. All nonessential movement is disabled by `prefers-reduced-motion`.
+The homepage uses `src/site.js` for its interactions. GSAP handles the hero entrance; Motion handles interaction feedback and selected scroll reveals; PhotoSwipe handles the gallery; Embla handles event preview swiping; dotLottie renders the namaste halo; and Three.js renders a subtle hero background. These optional enhancements load from pinned CDN imports with static fallbacks. The inner pages use `src/inner-pages.js` for their mobile menus. All nonessential movement is disabled by `prefers-reduced-motion`.
 
 ## Content to replace before launch
 
-- Confirmed event names, dates, start times, venue, arrondissement, prices, and booking URLs in `index.html`.
+- Confirmed event names, dates, start times, venue, arrondissement, prices, and booking URLs in the homepage and event pages.
 - Real Desi Events photos in `public/images/`.
 - Confirmed age, dress, group, and refund policies.
-- Mailing list backend, consent wording, and privacy policy URL.
+- Mailing list backend, consent wording, organiser identity, privacy contact, service provider details, and final privacy policy wording.
 - Official social, contact, and legal links.
 
 ## Design and licences

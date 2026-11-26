@@ -53,51 +53,9 @@ faqItems.forEach((item, index) => {
   });
 });
 
-const galleryButtons = [...document.querySelectorAll('.gallery-item')];
-const lightbox = document.querySelector('#lightbox');
-const lightboxImage = lightbox.querySelector('img');
-const closeButton = lightbox.querySelector('.lightbox-close');
-const previousButton = lightbox.querySelector('.lightbox-prev');
-const nextButton = lightbox.querySelector('.lightbox-next');
-let activeImage = -1;
-let previousFocus = null;
-function showImage(index) {
-  activeImage = (index + galleryButtons.length) % galleryButtons.length;
-  const sourceImage = galleryButtons[activeImage].querySelector('img');
-  lightboxImage.src = sourceImage.src;
-  lightboxImage.alt = sourceImage.alt;
-}
-function openLightbox(index) {
-  previousFocus = galleryButtons[index];
-  showImage(index);
-  lightbox.hidden = false;
-  document.body.style.overflow = 'hidden';
-  closeButton.focus();
-  animateFeedback(lightbox, { opacity: 0 }, { opacity: 1 }, 0.2);
-}
-function closeLightbox() {
-  lightbox.hidden = true;
-  document.body.style.overflow = '';
-  activeImage = -1;
-  previousFocus?.focus();
-}
-galleryButtons.forEach((button, index) => button.addEventListener('click', () => openLightbox(index)));
-closeButton.addEventListener('click', closeLightbox);
-previousButton.addEventListener('click', () => showImage(activeImage - 1));
-nextButton.addEventListener('click', () => showImage(activeImage + 1));
-lightbox.addEventListener('click', event => { if (event.target === lightbox) closeLightbox(); });
 document.addEventListener('keydown', event => {
   if (event.key === 'Escape') {
-    if (!lightbox.hidden) closeLightbox();
-    else if (!mobileNav.hidden) closeMenu(true);
-  }
-  if (lightbox.hidden) return;
-  if (event.key === 'ArrowRight') showImage(activeImage + 1);
-  if (event.key === 'ArrowLeft') showImage(activeImage - 1);
-  if (event.key === 'Tab') {
-    const controls = [closeButton, previousButton, nextButton];
-    const current = controls.indexOf(document.activeElement);
-    if (current >= 0) { event.preventDefault(); controls[(current + (event.shiftKey ? 2 : 1)) % controls.length].focus(); }
+    if (!mobileNav.hidden) closeMenu(true);
   }
 });
 

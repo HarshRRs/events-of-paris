@@ -24,6 +24,8 @@ The page uses `src/site.js` for its interactions. GSAP 3.15.0 handles the coordi
 
 Palette: paper `#f8f8f6`, ink `#171717`, magenta `#da3d7b`, saffron `#ffdd53`, orange `#ec5c28`, deep plum `#241b30`. Space Grotesk carries headlines; DM Sans carries body copy. The layout pairs a clean white editorial surface with a vibrant poster composition and a single dark experience section.
 
+The identity includes a scalable [brand mark](public/images/desi-events-mark.svg) used in the header, footer, and favicon, plus a [standalone wordmark](public/images/desi-events-logo.svg). The symbol is a four-point dance-floor sparkle within a rhythmic ring.
+
 The three photographs in `public/images/` were generated specifically for this project and are labelled as illustrative reference imagery throughout the site. They do not depict Desi Events events.
 
 Design guidance consulted: UI UX Pro Max (MIT) and Anthropic Frontend Design (Apache 2.0). Animation dependencies: Motion (MIT) and GSAP (standard no-charge license, including commercial use). No code or assets were copied from the other referenced component libraries.

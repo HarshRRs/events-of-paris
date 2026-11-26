@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 330 84" role="img" aria-labelledby="title">
+  <title id="title">Desi Events</title>
+  <circle cx="40" cy="42" r="36" fill="#DA3D7B"/>
+  <circle cx="40" cy="42" r="27.5" fill="none" stroke="#241B30" stroke-width="2.4" opacity=".65"/>
+  <path d="M40 18c4.2 15.7 8.3 19.8 24 24-15.7 4.2-19.8 8.3-24 24-4.2-15.7-8.3-19.8-24-24 15.7-4.2 19.8-8.3 24-24Z" fill="#FFDD53"/>
+  <circle cx="40" cy="42" r="4.2" fill="#241B30"/>
+  <text x="89" y="38" fill="#241B30" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="800" letter-spacing="-2">desi<tspan fill="#DA3D7B">.</tspan></text>
+  <text x="89" y="72" fill="#241B30" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="800" letter-spacing="-2">events</text>
+</svg>
+

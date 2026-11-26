@@ -28,4 +28,6 @@
 .button-dark:hover,.header-cta:hover{transform:translateY(-2px)}
 .button-dark:active,.header-cta:active{transform:translateY(0)}
 @media(prefers-reduced-motion:reduce){.orbit-one,.orbit-two{animation:none}.button-dark,.header-cta{transition:none}}
+.logo-mark{width:34px;height:34px;flex:none;object-fit:contain;align-self:center}
+.footer-logo .logo-mark{width:42px;height:42px}
 

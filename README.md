@@ -10,7 +10,7 @@ Open `index.html` directly, or serve the project folder with any static HTTP ser
 node server.mjs
 ```
 
-The page uses `src/site.js` for its interactions.
+The page uses `src/site.js` for its interactions. GSAP 3.15.0 handles the coordinated hero entrance; Motion 14.14.0 handles menu, FAQ, lightbox, and selected scroll feedback. Both are pinned CDN imports with native or static fallbacks. All nonessential movement is disabled by `prefers-reduced-motion`.
 
 ## Content to replace before launch
 
@@ -26,6 +26,6 @@ Palette: paper `#f8f8f6`, ink `#171717`, magenta `#da3d7b`, saffron `#ffdd53`, o
 
 The three photographs in `public/images/` were generated specifically for this project and are labelled as illustrative reference imagery throughout the site. They do not depict Desi Events events.
 
-Design guidance consulted: UI UX Pro Max (MIT) and Anthropic Frontend Design (Apache 2.0). The standalone page has no runtime dependencies. No code or assets were copied from the referenced component libraries.
+Design guidance consulted: UI UX Pro Max (MIT) and Anthropic Frontend Design (Apache 2.0). Animation dependencies: Motion (MIT) and GSAP (standard no-charge license, including commercial use). No code or assets were copied from the other referenced component libraries.
 
 

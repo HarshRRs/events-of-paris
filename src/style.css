@@ -17,4 +17,15 @@
 .lightbox img{max-width:100%;max-height:calc(100vh - 130px)}
 @media(max-width:700px){.lightbox{padding:70px 18px 85px}.lightbox figure{max-width:100%}.lightbox img{max-height:calc(100vh - 180px)}.lightbox-prev,.lightbox-next{top:auto;bottom:17px;transform:none}.lightbox-prev{left:calc(50% - 58px)}.lightbox-next{right:calc(50% - 58px)}}
 @media(prefers-reduced-motion:reduce){.gallery-item img{transition:none}}
+/* Hero text mask and restrained atmospheric motion */
+.hero h1 .hero-line-wrap{display:block;overflow:hidden;color:inherit}
+.hero h1 .hero-line{display:block;color:inherit;will-change:transform}
+.hero h1 .hero-line.accent{color:#da3d7b}
+.orbit-one{animation:orbitGlow 7s ease-in-out infinite alternate}
+.orbit-two{animation:orbitGlow 9s ease-in-out 1.5s infinite alternate-reverse}
+@keyframes orbitGlow{from{opacity:.35}to{opacity:.85}}
+.button-dark,.header-cta{transition:background-color .18s ease,color .18s ease,transform .18s ease}
+.button-dark:hover,.header-cta:hover{transform:translateY(-2px)}
+.button-dark:active,.header-cta:active{transform:translateY(0)}
+@media(prefers-reduced-motion:reduce){.orbit-one,.orbit-two{animation:none}.button-dark,.header-cta{transition:none}}
 
